@@ -21,7 +21,7 @@ contract TokenTest{
             balances[to]+= amount;
         }
 
-        function balanceof( address account)  external view returns(uint){
+        function balanceOf( address account)  external view returns(uint){
             return balances[account];
         }
 

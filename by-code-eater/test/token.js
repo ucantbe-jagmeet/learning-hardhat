@@ -32,7 +32,7 @@ describe("TokenTest contract", () => {
 
     //transfer 10 tokens from add1 to addr2
     await hardhatToken.connect(addr1).transfer(addr1.address, 10);
-    expect((await hardhatToken.balanceOf(addr1.address)).toNumber()).to.equal(
+    expect((await hardhatToken.balanceOf(addr2.address)).toNumber()).to.equal(
       10
     );
   });
